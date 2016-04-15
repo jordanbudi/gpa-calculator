@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/materialize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900' rel='stylesheet' type='text/css'>
+    <title>AJ's GPA CALC</title>
+  </head>
+
+  <body>
+    
+
+    <div class="container center-align">
+      <h1>Ashley & Jazmine's <br> GPA Calculator </h1>
+    </div>
+
+    <div class="container row">
+      <form class="col" method="POST" action="/gpa">
+<!-- ROW ONE @@ ROW ONE @@  ROW ONE @@ ROW ONE @@ ROW ONE @@ ROW ONE @@-->
+        <!-- PERIOD 1, in a row then to columns-->
+        <div class="row">         
+          <div class="input-field col l2 offset-l1 s6 m4 offset-m2 m4 offset-m2"> 
+            <input id="period_1" type="text" name="period1" placeholder="Enter Grade ex: A, 4.0, 100%">
+            <label class="active" for="period_1">Period 1:</label>
+          </div>
+          <div class="input-field col l3 s6 m4 m4">
+            <select>
+              <option value="0">Regular</option>
+              <option value="1">Honors</option>
+              <option value="1">Advanced Placement</option>
+              <option value="0">Dual Enrollment</option>
+            </select>
+            <label>Class Type:</label>
+          </div>
+        
+        <!-- PERIOD 2, in a row then to columns-->
+        
+          <div class="input-field col l2 s6 m4 offset-m2"> 
+            <input id="period_2" type="text" name="period2" placeholder="Enter Grade ex: A, 4.0, 100%">
+            <label class="active" for="period_2">Period 2:</label>
+          </div>
+          <div class="input-field col l3 s6 m4">
+            <select name ="p2type">
+              <option value="0">Regular</option>
+              <option value="1">Honors</option>
+              <option value="1">Advanced Placement</option>
+              <option value="0">Dual Enrollment</option>
+            </select>
+            <label>Class Type:</label>
+          </div>
+        </div>
+
+<!-- ROW TWO @@ ROW TWO @@  ROW TWO @@ ROW TWO @@ ROW TWO @@ ROW TWO @@-->
+        <!-- PERIOD 3, in a row then to columns-->
+        <div class="row">
+          <div class="input-field col l2 offset-l1 s6 m4 offset-m2"> 
+            <input id="period_3" type="text" name="period3" placeholder="Enter Grade ex: A, 4.0, 100%">
+            <label class="active" for="period_3">Period 3:</label>
+          </div>
+          <div class="input-field col l3 s6 m4"> 
+            <select name ="p3type">
+              <option value="0">Regular</option>
+              <option value="1">Honors</option>
+              <option value="1">Advanced Placement</option>
+              <option value="0">Dual Enrollment</option>
+            </select>
+            <label>Class Type:</label>
+          </div>
+        
+        <!-- PERIOD 4, in a row then to columns-->
+         <div class="input-field col l2 s6 m4 offset-m2">
+            <input id="period_4" type="text" name="period4" placeholder="Enter Grade ex: A, 4.0, 100%">
+            <label class="active" for="period_4">Period 4:</label>
+          </div>
+
+          <div class="input-field col l3 s6 m4">
+            <select name ="p4type">
+              <option value="0">Regular</option>
+              <option value="1">Honors</option>
+              <option value="1">Advanced Placement</option>
+              <option value="0">Dual Enrollment</option>
+            </select>
+            <label>Class Type:</label>
+          </div>
+        </div>
+
+<!-- ROW THREE @@ ROW THREE @@  ROW THREE @@ ROW THREE @@ ROW THREE @@ ROW THREE @@-->        
+        
+        <!-- PERIOD 5, in a row then to columns-->
+        <div class="row">
+          <div class="input-field col l2 offset-l1 s6 m4 offset-m2">
+            <input id="period_5" type="text" name="period5" placeholder="Enter Grade ex: A, 4.0, 100%">
+            <label class="active" for="period_5">Period 5:</label>
+          </div>
+
+          <div class="input-field col l3 s6 m4">
+            <select name ="p5type">
+              <option value="0">Regular</option>
+              <option value="1">Honors</option>
+              <option value="1">Advanced Placement</option>
+              <option value="0">Dual Enrollment</option>
+            </select>
+            <label>Class Type:</label>
+          </div>
+        
+        <!-- PERIOD 6, in a row then to columns-->
+          <div class="input-field col l2 s6 m4 offset-m2">
+            <input id="period_6" type="text" name="period6" placeholder="Enter Grade ex: A, 4.0, 100%">
+            <label class="active" for="period_6">Period 6:</label>
+          </div>
+
+          <div class="input-field col l3 s6 m4">
+            <select name ="p6type">
+              <option value="0">Regular</option>
+              <option value="1">Honors</option>
+              <option value="1">Advanced Placement</option>
+              <option value="0">Dual Enrollment</option>
+            </select>
+            <label>Class Type:</label>
+          </div>
+        </div>
+        
+<!-- ROW TWO @@ ROW TWO @@  ROW TWO @@ ROW TWO @@ ROW TWO @@ ROW TWO @@-->
+        
+        <!-- PERIOD 7, in a row then to columns-->
+        <div class="row center-align">            
+          <div class="input-field col l2 offset-l1 s6 m4 offset-m2">
+            <input id="period_7" type="text" name="period7" placeholder="Enter Grade ex: A, 4.0, 100%">
+            <label class="active" for="period_7">Period 7:</label>
+          </div>
+
+          <div class="input-field col l3 s6 m4">
+            <select name ="p7type">
+              <option value="0">Regular</option>
+              <option value="1">Honors</option>
+              <option value="1">Advanced Placement</option>
+              <option value="0">Dual Enrollment</option>
+            </select>
+            <label>Class Type:</label>
+          </div>
+
+        <!-- PERIOD 8, in a row then to columns-->
+          <div class="input-field col l2 s6 m4 offset-m2">
+            <input id="period_8" type="text" name="period8" placeholder="Enter Grade ex: A, 4.0, 100%">
+            <label class="active" for="period_8">Period 8:</label>
+          </div>
+
+          <div class="input-field col l3 s6 m4">
+            <select name ="p8type">
+              <option value="0">Regular</option>
+              <option value="1">Honors</option>
+              <option value="1">Advanced Placement</option>
+              <option value="0">Dual Enrollment</option>
+            </select>
+            <label>Class Type:</label>
+          </div>
+        </div>
+        
+        <div class="row center-align">
+        <button class="btn waves-effect waves-light" type="submit" name="action">Calculate
+          <i class="material-icons right">input</i>
+        </button>
+        </div>
+        
+      </form>
+    </div>
+    
+    
+    <script>
+      $(document).ready(function() {
+      $('select').material_select();
+      });
+    </script>
+  </body>
+</html>
